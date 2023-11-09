@@ -3,34 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Concesionario</title>
+    <title>Iniciar Sesion</title>
     <link rel="stylesheet" href="./css/stilodecoderclase.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <script src="https://kit.fontawesome.com/39733e0b24.js" crossorigin="anonymous"></script>
 </head>
+<header class="contenedor">
+    <nav class="concesionario">
+       <div class="logo-concesionario">
+           <img src="./img/logo2.jpg" alt="">
+           <h1>CARSSOLD</h1>
+        </div>
+           <div class="concesionario-text">
+            <h2>INICIAR SESION</h2>
+           </div>
+    </nav>
+  </header>
 <body>
-    <header class="contenedor">
-        <nav class="concesionario">
-           <div class="logo-concesionario">
-               <img src="./img/logo2.jpg" alt="">
-               <h1>CARSSOLD</h1>
-            </div>
-               <div class="concesionario-text">
-                <h2>CONCESIONARIO</h2>
-               </div>
-            
-           
-        </nav>
-      </header>
-    <section class="ubicacion">
-        <div class="input-ubicacion">
-            <input type="text" name="pais" id="pais" placeholder="Provincia">
-            <input type="text" name="pais" id="pais" placeholder="Localidad">
-            <button>BUSCAR</button>
-        </div>
-        <div class="ubi-concesionaria">
-           <img src="./img/mapa.png" alt="mapa">
-        </div>
-
+    <section id="form-register">
+        <h3>Formulario de Registro</h3>
+        <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre">
+        <input class="controls" type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido">
+        <input class="controls" type="correo" name="correo" id="nombre" placeholder="Ingrese su correo">
+        <input class="controls" type="pasword" name="pasword" id="pasword" placeholder="Ingrese su Contraseña">
+        <p>Estoy de acuerdo con <a href="#">Terminos y condiciones</a></p>
+        <input class="boton" type="submit" value="Registrar">
+        <p><a href="#">Ya tengo cuenta</a></p>
     </section>
     <footer>
         <div class="footer1">
@@ -67,5 +65,5 @@
        
     
       </footer>
-   
+      <script src="./js/bootstrap.js"></script>
 </body>

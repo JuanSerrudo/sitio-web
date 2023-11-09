@@ -1,20 +1,339 @@
-
-.seccion-grilla {
-    width: 100%;
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
 }
 
-.cabecera, .navbar, .seccion, .seccion2, .articulo, .pie {
-    padding: 10px;
-    border: 1px solid;
+h1{
+  
+  color: #101010;
+  font-family: 'Alumni Sans Collegiate One', sans-serif;
+  margin-left: 25px;
+  margin-top: -42px;
+  font-size: 1em;
+ 
 }
-
-.grid {
-    background-color: rgb(112, 74, 25);
+header{
+  border-bottom: 2px solid #ababab;
     
+}
+
+
+.logo img{
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+  margin-top: -10px;
+  object-fit: contain;
+  
+}
+.nav-ul li{
+  display: inline-block;
+  margin-left: 20px; 
+  padding: 10px;
+  margin-top: -20px;
+ 
+ 
+    
+}
+
+.nav-ul{
+    display: flex;
+    justify-content: end;
+   
+    
+}
+a{
+  color: #525252;
+  font-family: monospace;
+  font-weight: 100;
+}
+a:hover{
+  color: #161616;
+ 
+
+}
+.nav-item i{
+  color: #525252;
+}
+.nav-item i:hover{
+  color: #161616;
+}
+.automoviles{
+  margin-top: 20px;
+ 
+  display: grid;
+  justify-content: center;
+  
+  grid-template-columns: repeat(4, 290px);
+  grid-template-rows: repeat(4, 300px);
+  gap: 20px;
+ 
+   
+}
+.automoviles div{
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  align-items: center;
+
+  
+}
+
+
+.automoviles img{
+  width: 290px;
+  height: 200px;
+  object-fit: cover;
+   border-radius: 10px;
+   padding: 5px 5px 5px 5px;
+   margin-right: 5px;
+   justify-content: center;
+   align-items: center;
+}
+h4{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  color:#161616;
+ padding-left: 10px;
+}
+h5{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  color: #161616;
+  padding-left: 10px;
+}
+#ver-mas{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: 95px;
+
+}
+#ver-mas:hover{
+  background-color: #cdcdcd;
+}
+footer{
+  background-color: #101010;
+  margin-top: 20px;
+}
+
+.ul-footer a{
+  color: rgb(220, 220, 220);
+}
+.copyright{
+  color: rgb(220, 220, 220) ;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 20px;
+ 
+ 
+ 
+}
+.ul-footer{
+  display: flex;
+}
+.ul-footer li{
+  padding: 20px;
+}
+.redes-sociales{
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+ 
+  
+  
+}
+.redes-sociales li{
+  padding: 20px;
+  font-size: 1.5em;
+ 
+  
+
+}
+ul{
+  list-style: none;
+}
+
+/* css de modelos*/
+
+.logo img{
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+  object-fit: contain;
+  
+}
+
+.modelos-text{
+  background-color: #161616;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.modelos{
+  display: flex;
+}
+
+
+.logo{
+  width: 160px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+}
+.todo-los-modelos{
+  display: block;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+.todo-los-modelos div a{
+  color: #2a2a2a;
+}
+.mod-logo{
+  border-bottom: none;
+}
+.todo-los-modelos a{
+  display: block;
+}
+#modelos-grid{
+  display: grid;
+  grid-template-columns: 30% repeat(3, 280px) ;
+  grid-template-rows: repeat(5, 300px);
+  gap: 10px;
+  margin-top: 20px;
+
+  
+
+}
+#modelos-grid img{
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+   border-radius: 10px;
+   padding: 5px 5px 5px 5px;
+   margin-right: 5px;
+   justify-content: center;
+   align-items: center;
+  
+}
+.todo-los-modelos{
+  grid-row: 1 / span 2;
+  align-items: center;
+  margin-left: 10px;
+  text-align: center;
+  background-color: #161616;
+}
+.todo-los-modelos a{
+     font-size: 1.5em;
+     color: #ffffff;
+}
+#modelos-grid div{
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  align-items: center;
+}
+/* css de concesionario*/
+
+.concesionario{
+  display: flex;
+}
+.logo-concesionario img{
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+  object-fit: contain;
+}
+.concesionario-text{
+  background-color: #161616;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.logo-concesionario{
+  width: 160px;
+  background-color: rgb(255, 255, 255);
+}
+.contenedor{
+  border-bottom: none;
+}
+.ubi-concesionaria{
+  margin-top: 20px;
+  text-align: center;
+  
+}
+.input-ubicacion{
+  width: 100%;
+}
+.ubi-concesionaria img{
+  width: 1100px;
+  height: 450px;
+  color: #000000;
+  background-size: cover;
+  border-radius: 10px;
+ 
+
+}
+input{
+  width: 200px;
+  height: 50px;
+  margin-top: 20px;
+  text-align: center;
+  margin-left: 100px;
+  
+
+}
+.input-ubicacion button{
+  width: 200px;
+  height: 50px;
+  padding-left: 50px;
+  align-self: center;
+}
+h3{
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 20px;
+}
+ 
+#form-register{
+  width: 500px;
+  background-color: #000000;
+  padding: 30px;
+  margin: auto;
+  margin-top: 50px;
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace;
+ 
+}
+.controls{
+  margin: auto;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#form-register p {
+  text-align: center;
+  padding-top: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.8em;
+  color: #ffffff;
+  
+}
+.contactanos{
+  width: 500px;
+  background-color: #ffffff;
+  padding: 30px;
+  margin: auto;
+  margin-top: 50px;
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace;
+}
+.contactanos button{
+  width: 100%;
+  height: 30px;
+  
 }
